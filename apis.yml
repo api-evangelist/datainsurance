@@ -1,7 +1,26 @@
 aid: datainsurance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datainsurance.png
 name: Datainsurance
-description: Datainsurance is a company surfaced as a portfolio company of anthemis and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Datainsurance is an early-stage US company listed in the Anthemis Group
+  venture portfolio under the Insurance & Risk Management thesis. Anthemis publishes
+  no company website, logo, or description for the listing, and this enrichment pass
+  found no live public web presence: datainsurance.com, .io, .net and .tech all resolve
+  to parked domain-sale landers, and there is no GitHub organization or public repository
+  under the name. No developer portal, documentation, OpenAPI, or any other API artifact
+  could be located, so the company is carried in the API Evangelist network as an
+  unresolved venture-portfolio lead rather than an API provider. It appears to be
+  defunct, never publicly launched, or operating under a different brand name.'
 url: https://raw.githubusercontent.com/api-evangelist/datainsurance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,76 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-profile:
+  thesis: Insurance & Risk Management
+  strategy: Venture
+  stage: Early
+  headquarters: USA
+  source: https://www.anthemis.com/portfolio/datainsurance/
+  source_snapshot: https://web.archive.org/web/20240615170835/https://www.anthemis.com/portfolio/datainsurance/
+x-probes:
+  date: '2026-07-20'
+  web_presence: none
+  domains:
+  - domain: datainsurance.com
+    status: 307
+    result: parked / for sale (GoDaddy)
+  - domain: datainsurance.io
+    status: 200
+    result: parked lander
+  - domain: datainsurance.net
+    status: 200
+    result: parked / for sale (HugeDomains)
+  - domain: datainsurance.tech
+    status: 200
+    result: parked lander
+  - domain: data-insurance.com
+    status: 200
+    result: parked lander
+  - domain: datainsurance.ai
+    status: 0
+    result: no response
+  - domain: datainsurance.co
+    status: 0
+    result: no response
+  - domain: datainsurance.fr
+    status: 0
+    result: no response
+  - domain: datainsurance.com.br
+    status: 0
+    result: no response
+  github_org:
+    url: https://github.com/datainsurance
+    status: 404
+  vendor_listing:
+    url: https://www.anthemis.com/portfolio/datainsurance/
+    live_status: blocked
+    archived_status: 200
+    external_links: none
+  notes: The Anthemis portfolio page carries an "Explore datainsurance" block with
+    no outbound link and publishes no logo asset. No API surface, documentation, or
+    specification exists to harvest; no artifact directories were created.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insurance
+- Risk Management
+- Insurtech
+- Venture Backed
+- Early Stage
+- Portfolio Lead
+- Unresolved
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
