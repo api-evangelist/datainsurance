@@ -77,7 +77,7 @@ x-probes:
   notes: The Anthemis portfolio page carries an "Explore datainsurance" block with
     no outbound link and publishes no logo asset. No API surface, documentation, or
     specification exists to harvest; no artifact directories were created.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
